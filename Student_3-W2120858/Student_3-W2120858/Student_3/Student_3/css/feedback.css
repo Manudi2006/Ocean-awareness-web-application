@@ -1,0 +1,119 @@
+/*Styling fieldset elements*/
+fieldset{
+    background: whitesmoke;
+    margin-bottom: 20px;
+    padding:20px;
+    border-radius: 10px;
+    color:black;
+    width: 1200px;
+    margin-left:auto;
+    margin-right: auto;
+    border: none;
+
+}
+label{
+    width: 25%;
+    margin-right: 5px;
+    text-align: right;
+}
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(10, 9, 9);
+    letter-spacing: 1px;
+}
+.f1 input{
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.f2{
+    font-size: 16px;
+}
+.f2 input{
+    width: 100px;
+    padding: 12px;
+}
+.f2 input,select,textarea{
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#ocean, #ecosystem, #activity{
+    width: 450px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+/* Star icon styling */
+.star-icon{
+    display: flex;
+    gap:5px
+}
+.rating-css div{
+    color:#ffe400;
+}
+.rating-css input{
+    display:none;
+}
+.rating-css input + label{
+    font-size: 30px;
+    text-shadow:1px 1px 0 #ffe400;
+    cursor:pointer;  
+}
+.rating-css input:checked + label ~ label{
+    color: #838383;
+}
+.rating-css label:hover{
+    color:burlywood;
+}
+.rating-css label:active{
+    transform:scale(0.8);
+    transition:0.3s ease;
+}
+
+/*Textarea styling*/
+textarea{
+    width: 450px;
+    font-size: 14px;
+    padding: 5px;
+}
+.f3 input{
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#Send{
+    background:#7D9EC0;
+}
+.textarea-container{
+    position: relative;
+    width: 400px;
+}
+.word-counter {
+    position: absolute;
+    bottom: 10px;
+    right:15px;
+    font-size:12px;
+    color: gray;
+    pointer-events: none;
+}
+.valid {
+position: relative;
+flex-direction: column;
+}
+.error-message{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.f1 input, .f1 select, .f1 textarea, .f2 select, .f2 textarea, .f3 input{
+    margin-bottom: 20px;
+}

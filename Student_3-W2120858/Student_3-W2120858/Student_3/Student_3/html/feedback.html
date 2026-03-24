@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Title of the webpage that appears in the browser tab-->
+        <title>Feedback</title>
+        <!--Link to external stylesheet (Global.css)-->
+        <link rel="stylesheet" href="../css/Global.css">
+        <!--Link to external stylesheet-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <!--Link to external stylesheet (.css)-->
+        <link rel="stylesheet" href="../css/feedback.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="home.html"><img src="../images/logo.png" alt="Website logo"></a>
+            </div>
+             <!--navigation bar-->
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="profile.html">User profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+            <button class="xmark"><i class="fa-solid fa-xmark"></i></button>
+        </header>
+        <section class="feedback">
+             <!--Page heading-->
+            <h1>Feedback Form </h1>
+            <form>
+                <!--First fieldset-->
+                <fieldset class="f1">
+                    <legend>Personal Details</legend>
+                    <label for="name">Full Name:</label>
+                    <div class="valid">
+                        <input type="text" id="name" name="name" size="50" placeholder="Please enter your full name." pattern="^[A-Za-z\s]+$" title="only letters allowed">
+                        <span class="error-message" id="nameError">Only letters allowed.</span>
+                    </div>
+                    <label for="telno">Telephone Number:</label>
+                    <div class="valid">
+                        <input type="tel" id="telno" name="telno" size="50" placeholder="Please enter valid telephone number. (10 digit)" pattern="^\d{10}$" title="Please enter exactly 10 digits" required>
+                        <span class="error-message" id="telError">Please enter only 10 digits.</span>
+                    </div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" size="50" placeholder="Please enter  valid email address." required>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" size="50" placeholder="Please enter your address." required>
+                </fieldset>
+                
+                <!--Second fieldset-->
+                <fieldset class="f2">
+                    <legend>Ocean Awareness & Experience</legend>
+                    <label for="ocean">Which is the nearest ocean to you? </label><br>
+                    <input name="Ocean" list="Oceans" id="ocean">
+                    <datalist id="Oceans">
+                        <option value="Arctic">
+                        <option value="North Atlantic">
+                        <option value="South Atlantic">
+                        <option value="North Pacific">
+                        <option value="South Pacific">
+                        <option value="Indian">
+                        <option value="Southern Oceans">
+                        </datalist>
+                    <br>
+                    <br>
+                    Have you ever participated in any ocean conservation activities?<br>
+                    <input type="radio" name="participated" id="yes" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="participated" id="no" value="no">
+                    <label for="no">No</label>
+                    <br>
+                    <br>
+                    <label for="activity">Which ocean activity do you prefer most?</label><br>
+                    <select name="Activity" id="activity" multiple size="6">
+                        <option value="diving snorkeling">Diving and Snorkeling</option>
+                        <option value="fishing">Fishing</option>
+                        <option value="boating">Boating</option>
+                        <option value="experience maritime heritage">Experience Maritime Heritage</option>
+                        <option value="surfing">Surfing</option>
+                        <option value="whale watching">Whale Watching</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="ecosystem">What concerns you about the underwater eco systems?</label><br>
+                    <select name="EcoSystems" id="ecosystem">
+                        <option value="pollution">Pollution</option>
+                        <option value="coral bleaching">Coral Bleaching</option>
+                        <option value="illegal fishing">Illegal Fishing Practices</option>
+                        <option value="tourism effects">Tourism Effects</option>
+                        <option value="climate change">Climate Change</option>
+                    </select>
+                    <br>
+                    <br>
+                    How often do you visit the beach?<br>
+                    <input type="checkbox" name="visitbeach" id="daily" value="daily">
+                    <label for="daily">Daily</label>
+                    <input type="checkbox" name="visitbeach" id="weekly" value="weekly">
+                    <label for="weekly">Weekly</label>
+                    <input type="checkbox" name="visitbeach" id="monthly" value="monthly">
+                    <label for="monthly">Monthly</label>
+                    <input type="checkbox" name="visitbeach" id="annually" value="annually">
+                    <label for="annually">Annually</label>
+                    <input type="checkbox" name="visit beach" id="rarely" value="rarely">
+                    <label for="rarely">Rarely</label>
+                    <br>
+                    <br>
+                    How would you rate your knowledge about <b>marine life</b>?
+                    <br>
+                    <div class="rating-css">
+                        <div class="star-icon">
+                            <input type="radio" name="rating1" id="rating1">
+                            <label for="rating1" class="fa fa-star"></label>
+                            <input type="radio" name="rating1" id="rating2">
+                            <label for="rating2" class="fa fa-star"></label>
+                            <input type="radio" name="rating1" id="rating3">
+                            <label for="rating3" class="fa fa-star"></label>
+                            <input type="radio" name="rating1" id="rating4">
+                            <label for="rating4" class="fa fa-star"></label>
+                            <input type="radio" name="rating1" id="rating5">
+                            <label for="rating5" class="fa fa-star"></label>
+                        </div>
+                    </div>
+                    <br>
+                    <label for="comments">Comment or Message:</label><br>
+                    <div class="textarea-container">
+                        <textarea name="comments" id="comments" rows="10" cols="60" placeholder="Please provide any feedback or inquiries. (Use maximum 300 words)"></textarea>
+                        <div class="word-counter" id="wordCounter">300 words remaining</div>
+                    </div>
+                    
+                    <br>
+                    <br>
+                    <label for="upload">If  you have any attachments (Screenshot or document) please upload it here.</label><br>
+                    <input type="file" name="upload" id="upload" aria-label="Upload Screenshot or Document attachment">
+                </fieldset>
+                
+                <!--Third fieldset-->
+                <fieldset class="f3">
+                    <legend>Submit</legend>
+                    <label for="datetime">Enter the date & time when you submit the form.</label>
+                    <input type="datetime-local" id="datetime" name="datetime" value="2025-02-23T00:00" required>
+                    <input type="submit" name="button" id="Send" value="Send">
+                </fieldset>
+                <script src="../JavaScript/feedback.js">//link to the java 
+                </script>
+                <!--Footer with a link to student 3 editor-->
+                <footer>
+                    <div class="person devider">
+                        <a href="pageEditor_ST1.html" target="_blank">
+                            <h2>YEHENI</h2>
+                            <h2>DE SILVA</h2>
+                        </a>
+                    </div>
+                    <div class="person devider">
+                        <a href="pageEditor_ST2.html" target="_blank">
+                            <h2>KHADEEJA</h2>
+                            <h2>MOHAMMED</h2>
+                        </a>
+                    </div>
+                    <div class="person devider">
+                        <a href="pageEditor_ST3.html" target="_blank">
+                            <h2>MANUDI</h2>
+                            <h2>MORAGODA</h2>
+                        </a>
+                    </div>
+                    <div class="person devider">
+                        <a href="pageEditor_ST4.html" target="_blank">
+                            <h2>AMANDA</h2>
+                            <h2>RUPASINGHE</h2>
+                        </a>
+                    </div>
+                    <br><br>
+                    <div class="copyright">
+                        <p>Copyright &copy; 2025</p>
+                    </div>
+                </footer>
+                <script>
+                    hb = document.querySelector('.hamburger');
+                    xmark = document.querySelector('.xmark');
+                    nav = document.querySelector('nav'); // Selecting nav correctly
+                    hb.onclick = function(){
+                        hb.style.display = 'none';
+                        xmark.style.display = 'block';
+                        nav.classList.toggle('navactive');
+                    }
+                    xmark.onclick = function(){
+                        hb.style.display = 'block';
+                        xmark.style.display = 'none';
+                        nav.classList.remove('navactive');
+                    }
+                </script>
+            </form>
+        </section>
+    </body>
+</html>

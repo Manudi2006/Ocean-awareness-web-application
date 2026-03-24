@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validator Page Student - provide your student name</title>
+
+    <link rel="stylesheet" href="../css/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="../css/Global.css">
+
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header id="top">
+        <div class="logo">
+            <a href="home.html"><img src="../images/logo.png" alt="Website logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">User profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+        <button class="xmark"><i class="fa-solid fa-xmark"></i></button>
+    </header>
+
+    <section class="stud">
+        <h2>Manudi Moragoda, Student 3</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update the content of the following sections with the information that corresponds to the pages you implemented  -->
+
+            <section>
+                <h2 id="feedbackVal"> Feedback Form validation report</h2>
+                    <p>During the validation process for the feedback form , I encounterd a few erros and warnings. One of the issue was file path for logo. I have fixed that error using relative paths to ensure compatibility across different systems. For the feedback form there was an minor error because a label and I fixed it. </p> 
+                    <img src="../images/validation_feedback.png">
+                                    
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST3.html#feedback">Include a link back to the corresponding section of the Page Editor.</a></p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            </section>
+
+            <section>
+                <h2 id="teamVal">Team Page validation report</h2>
+                <p>During the validation process for the team page, I encounterd a few erros and warnings. One of the main issue student image's file path. I corrected it by replacing the file path with relative paths to ensure compatibility across different systems.</p>
+                    <img src="../images/validation_team.png">
+                                    
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST3.html#team">Include a link back to the corresponding section of the Page Editor.</a></p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            </section></a></p>
+
+            <section>
+                <h2 id="content3Val">Content Page validation report</h2>
+                <p>For the content page, validation highlight some minor errors. Improperly closed html tags and image file paths. I corrected those errors by closing the html tags correctly and relative paths to ensure compatibility across different systems.</p>
+                <img src="../images/validation_team.png">
+            
+                                    
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST3.html#content3">Include a link back to the corresponding section of the Page Editor.</a></p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            </section></a></p>
+
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="#feedbackVal">Feedback page</a> </li>
+                        <li><a href="#teamVal">Team page</a></li>
+                        <li><a href="#content3Val">Content page</a></li>
+                    </ul>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="person devider">
+            <a href="pageEditor_ST1.html" target="_blank">
+                <h2>YEHENI</h2>
+                <h2>DE SILVA</h2>
+            </a>
+        </div>
+        <div class="person devider">
+            <a href="pageEditor_ST2.html" target="_blank">
+                <h2>KHADEEJA</h2>
+                <h2>MOHAMMED</h2>
+            </a>
+        </div>
+        <div class="person devider">
+            <a href="pageEditor_ST3.html" target="_blank">
+                <h2>MANUDI</h2>
+                <h2>MORAGODA</h2>
+            </a>
+        </div>
+        <div class="person devider">
+            <a href="pageEditor_ST4.html" target="_blank">
+                <h2>AMANDA</h2>
+                <h2>RUPASINGHE</h2>
+            </a>
+        </div>
+        <br><br>
+        <div class="copyright">
+            <p>Copyright &copy; 2025</p>
+        </div>
+    </footer>
+    <script>
+        hb = document.querySelector('.hamburger');
+        xmark = document.querySelector('.xmark');
+        nav = document.querySelector('nav'); // Selecting nav correctly
+        hb.onclick = function(){
+            hb.style.display = 'none';
+            xmark.style.display = 'block';
+            nav.classList.toggle('navactive');
+        }
+        xmark.onclick = function(){
+            hb.style.display = 'block';
+            xmark.style.display = 'none';
+            nav.classList.remove('navactive');
+        }
+    </script>
+</body>
+</html>

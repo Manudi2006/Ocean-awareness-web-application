@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - provide your student name</title>
+
+    <link rel="stylesheet" href="../css/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="../css/Global.css">
+</head>
+<body>
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header id="top">
+        <div class="logo">
+            <a href="home.html"><img src="../images/logo.png" alt="Website logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="profile.html">User profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+        <button class="xmark"><i class="fa-solid fa-xmark"></i></button>
+    </header>
+
+    <section class="stud">
+        <h2>Manudi Moragoda, Student 3</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="feedback">Feedback</h2>
+                    <h3>Technical Description</h3>
+                    <p>Firstly, declares the document into HTML5. Then add document's language into English and meta data. In the header tag finally add the styling links.</p> 
+                    <p>The <b>body</b> contains the main content. <b>header</b> contains the site logo, navigation bar, and menu buttons. In the navigation bar it includes a list ul tag with li items for navigation links.</p>
+                    <p><b>Form Structure</b></p>
+                    <p>In this html code there are mainly three Fieldsets. Legend provides a title for each Fieldset (Personal Details, Ocean Awareness and Submit).</p>
+                    <p>Label is used for form each element description and input fields provide the types like text, email, tel, date-time inputs.  Textarea allows multi- line text input. Select creates dropdown with option element for choices. Datalist provides predefined suggestions for an input field. Input type radio and checkbox enable single or multi selections. Pattern, title, and required attributes enforce input validation. Aria label in the file upload input improves accessibility. For rate about the marine life I have used five stars. </p>
+                    <p><b>Css</b></p>
+                    <p>In the global css it includes the common css stylings such as navigation bar styling, footer styling and background colour etc. For the feedback form fieldset background color is whitesmoke for better readability. Border radius has rounded the edge. Then width, margin left, margin right centers the form.</p>
+                    <p>In the css code there are plenty of classes and ids. For each class and ids, I have used different stylings for better user experience. The form includes different classes and ids for dropdowns, textareas, star-based rating systems, reset and submit buttons valid and error messages etc. For the star-based rating system it includes interactive hover and click effects. Error messages and validation styling are incorporated for user-friendly input handling. Buttons have a distinct color, and a word counter is positioned within textareas.</p>
+                    
+                    <h3>Accessibility</h3>
+                        <p>In the feedback form accessibility has been addressed through multiple features. Fieldset, legend , label elements improves the screen reader compatibility. Input fields includes aria-label attributes and descriptive placeholders for text for better clarity. For the validation purpose I have used title attribute and error messages to help users to correct mistakes. </p>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST3.html#feedbackVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="Feedback.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="team">Team Page</h2>
+                    <h3>Technical Description</h3>
+                    <p><b>HTML</b></p>
+                    <p>Firstly declares the document into HTML5. Then add document's language into English. In the header tag finally add the styling links.</p>
+                    <p>The body contains the main content. header contains the site logo, navigation bar, and menu buttons. In the navigation bar it includes a list ul tag wiith li items for navigation links.</p> 
+                    <p>Section class team containing the team details. It started with a main heading h1 and a subheading h3 tag. Each team member’s details are display in the div class box. Inside that there is img tags and hidden details about team members (name, role and design and implanted pages). The onclick and onkeydown events trigger JavaScript functions to toggle the visibility of these details, allowing users to view more information interactively.</p>
+                    <p>In the html code I have used heading tags to display the hierarchy. The tabindex="0" attribute allows the images to be focusable by keyboard users, and the aria-expanded="false" attribute provides screen readers with information about the visibility state of the team member details.</p>
+                    <p>The footer links team page to student3 page editor page.</p>
+                    <p><b>Css</b></p>
+                    <p>In the global css it includes the common css stylings such as navigation bar styling, footer styling and background colour etc.</p>
+                    <p>The .team class positions the entire section centrally within the viewport using flex, aligning items both horizontally and vertically. The .team content class displays a grid layout for the team members. Its layout with grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)), ensuring responsive columns that adjust based on screen size. .team-comtent imag class display the image with rounded corners using border radius. The .box class defines the background colour for the box with rounded corners and smooth transition effects. The .hidden-details class ensures to hide the additional details by default and only displayed when toggled with the .show class.</p>
+                    <p>Additionally, css code includes hover effects, different font sizes and colours to specific areas , text styles etc.</p>
+
+                    <h3>Accessibility</h3>
+                        <p>In the team page there are several accessibility features. Firstly, inside the img tag there is an 
+                            attribute called alt. This alt tag includes alternative information for an image. (Student 1, 
+                            Student 2, Student 3, and Student 4) That is a text description of an image that is read aloud by 
+                            screen readers. Additionally, each team member’s image has a “tabinex=0” attribute. This 
+                            allowing user to navigate through the images using the keyboard. To further enhance 
+                            accessibility, the aria-expanded="false" attribute is used on the images, indicating whether the 
+                            associated details are visible or hidden, and it is dynamically updated via JavaScript when the 
+                            details are toggled. Pressing Enter or space key keyboard users can toggle the details because 
+                            I have used onkeydown event attribute. </p>
+                        <p>Finally, the whole HTML tags have a logical flow.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST3.html#teamVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="team.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="content3">Content Page</h2>
+                    <h3>Technical Description</h3>
+                    <p><b>HTML</b></p> 
+                    <p>Firstly, declares the document into HTML5. Then add document's language into English. In the header tag finally add the styling links.</p>
+                    <p>The content page includes standard layout including header , content sections and footer. Header contains the site logo, navigation bar, and menu buttons. In the navigation bar it includes a list ul tag with li items for navigation links. For the content sections I have used different headings according to the hierarchical order. In the content page sections are clearly defined using div tags with corresponding classes. The images are added using the img tag, enclosed within figure tags for better accessibility and semantic grouping with captions provided through figcaption.</p>
+                    <p>The content page also includes internal linking. Anchor tag has been used for the internal navigation. This is supported by the id attributes on the headers like id= BiologicalClassification allowing users to go to specific sections of the webpage.</p>
+                    <p>Finally, footer element links the content page to student3 page editor.</p>
+                    <p><b>CSS</b></p>
+                    <p>In the global css it includes the common css stylings such as navigation bar styling, footer styling and background colour etc.</p>
+                    <p>.container class is wrapping the main content and providing styling such as line height, width, margin, and box shadow. The padding and margin elements make the webpage more readable. For the navigation navlist id is used to make a horizontal navigation bar. It includes hover to change the colour when click a link. images and .marine, .sea classes are responsible for style the images. .top class is used to style the back to top button. </p>
+
+                    <h3>Accessibility</h3>
+                        <p>In the team page there are several accessibility features. Firstly, inside the img tag there is an attribute called alt. This alt tag includes alternative information for an image. (For the content page images it includes marine creature’s name.) Figcaption element also a accessibility feature. Navigation links can be easily identified with anchor tag and provide smooth internal navigation via id references.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST3.html#content3Val">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content_ST3.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                <p>I encountered difficulties when creating this webpage called “Life below water’’. Main challenge that I have faced is handling various coding styles and guaranteeing seamless collaboration during the webpage's development. When adding styling to corresponding webpages we had many issues. We fixed this issue by creating a global.css file. Key lesson learned was the importance of clear communication and setting up proper version control early in the project to avoid confusion and streamline the development process. </p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                <p>By adding alt text for photos to provide accessibility, the webpage I made conforms with Janet standards. This guarantees that people who are visually impaired can comprehend the images' information. According to the requirements, alt text was the focus, although other compliance factors like security and privacy were taken into account generally. </p>
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                    <ul>
+                        <h2 id="ref">References</h2>
+                        <p><b>For images -: istock</b></p>
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 07 March 2025).</li>
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/photo/sea-otters-in-the-ocean-in-tofino-vancouver-island-british-columbia-canada-gm1309924013-399490109?searchscope=image%2Cfilm
+                        </a>(Last accessed: 07 March 2025).</li>
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/photo/a-baby-humpback-whale-plays-near-the-surface-in-blue-water-gm1164887104-320329056?searchscope=image%2Cf</a>(Last acessed: 07 March 2025).</li>
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/photo/salps-underwater-planktonic-tunicate-mediterranean-gm1151437958-312053859?searchscope=image%2Cfilm</a>(Last acessed: 07 March 2025).</li>
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/photo/great-reef-turtle-bissa-gm1789206033-547578821?searchscope=image%2Cfilm</a>(Last acessed: 07 March 2025).</li>
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/photo/majestic-seahorse-gm1446518600-484586447</a>(Last accessed: 07 March 2025).</li>
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/photo/two-dolphins-nature-photography-gm1198542043-342580493</a>(Last accessed: 07 March 2025).</li>
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/photo/galapagos-sea-lion-ecuador-gm1324549425-409849043</a>(Last accessed: 07 March 2025).</li>
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/photo/large-school-of-scissortail-fusilier-caesio-caerulaurea-near-surface-triton-bay-west-gm1776188944-546321011</a>(Last accessed: 07 March 2025).</li>
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/photo/sea-creature-gm1444152212-482932015</a>(Last accessed: 07 March 2025).</li>
+                        <p><b>For HTML codes and css -:w3 schools and Lecture Notes</b></p>
+                        <li>w3 Schools (2025) <i>w3 Schools</i> Available at: <a href="#">https://www.w3schools.com/html/</a> (Last accessed: 05 March 2025).</li>
+                        <p><b>For information for the content page:</b></p>
+                        <li>SCUBA (2023) <i>SCUBA</i> Available at: <a href="#">https://www.scubadiving.com/how-marine-animals-are-playing-vital-role-in-saving-our-planet#:~:text=Without%20otters%2C%20urchin%20populations%20spike,snails%20and%20slugs%20to%20proliferate.</a> (Last accessed: 06 March 2025)</li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="#feedback">Feedback page</a> </li>
+                        <li><a href="#team">Team page</a></li>
+                        <li><a href="#content3">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+                <li><a href="../document/Report.pdf" download="Report.pdf">Download pdf</a>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="person devider">
+            <a href="pageEditor_ST1.html" target="_blank">
+                <h2>YEHENI</h2>
+                <h2>DE SILVA</h2>
+            </a>
+        </div>
+        <div class="person devider">
+            <a href="pageEditor_ST2.html" target="_blank">
+                <h2>KHADEEJA</h2>
+                <h2>MOHAMMED</h2>
+            </a>
+        </div>
+        <div class="person devider">
+            <a href="pageEditor_ST3.html" target="_blank">
+                <h2>MANUDI</h2>
+                <h2>MORAGODA</h2>
+            </a>
+        </div>
+        <div class="person devider">
+            <a href="pageEditor_ST4.html" target="_blank">
+                <h2>AMANDA</h2>
+                <h2>RUPASINGHE</h2>
+            </a>
+        </div>
+        <br><br>
+        <div class="copyright">
+            <p>Copyright &copy; 2025</p>
+        </div>
+    </footer>
+    <script>
+        hb = document.querySelector('.hamburger');
+        xmark = document.querySelector('.xmark');
+        nav = document.querySelector('nav'); // Selecting nav correctly
+        hb.onclick = function(){
+            hb.style.display = 'none';
+            xmark.style.display = 'block';
+            nav.classList.toggle('navactive');
+        }
+        xmark.onclick = function(){
+            hb.style.display = 'block';
+            xmark.style.display = 'none';
+            nav.classList.remove('navactive');
+        }
+    </script>
+    </footer>
+</body>
+</html>

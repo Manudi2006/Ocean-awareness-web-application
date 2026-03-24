@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Title of the webpage that appears in the browser tab-->
+        <title>Team Page</title>
+        <!--Link to external stylesheet (Global.css)-->
+        <link rel="stylesheet" href="../css/Global.css">
+        <!--Link to external stylesheet (team.css)-->
+        <link rel="stylesheet" href="../css/team.css">
+    </head>
+    <body>
+        <!--Script to toggle the display of team member details when clicking on an image-->
+        <script src="../JavaScript/team.js">//link to the java 
+        </script>
+        <header>
+            <div class="logo">
+                <a href="home.html"><img src="../images/logo.png" alt="Website logo"></a>
+            </div>
+            <!--navigation bar-->
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="profile.html">User profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+            <button class="xmark"><i class="fa-solid fa-xmark"></i></button>
+        </header>
+        <!--Main section containing team details-->
+        <section class="team">
+            <!--Page heading-->
+            <h1>Meet Our Team</h1>
+            <div class="details">
+                <h3>Learn about the team! Hover over the images for details.</h3>
+            </div>
+            <br>
+            <div class="team-content">
+                 <!--To display each team member in separete box-->
+                <div class="box">
+                    <img src="../images/Student1.jpg" alt="Student 1" onclick="toggleDetails('student1-details')" onkeydown="handleKeyPress (event,'student1-details')" tabindex="0" aria-expanded="false">
+                    <div id="student1-details" class="hidden-details">
+                    <h3>Yeheni De Silva</h3>
+                    <h4><b>Role:</b>&nbsp;Student 1</h4>
+                    <h4><b>Design & Implemented Pages:</b></h4>
+                    <p>Splash Screen</p>
+                    <p>Volunteer</p>
+                    <p>Content Page 1</p>
+                    </div>
+                </div>
+                
+                <!--To display each team member in separete box-->
+                <div class="box">
+                    <img src="../images/Student2.jpg" alt="Student 2" onclick="toggleDetails('student2-details')" onkeydown="handleKeyPress (event,'student2-details')" tabindex="0" aria-expanded="false">
+                    <div id="student2-details" class="hidden-details">
+                    <h3>Khadeeja Mohammed</h3>
+                    <h4><b>Role:</b>&nbsp;Student 2</h4>
+                    <h4><b>Design & Implemented Pages:</b></h4>
+                    <p>Home Page</p>
+                    <p>Table</p>
+                    <p>Content Page 2</p>
+                    </div>
+                </div>
+
+                <!--To display each team member in separete box-->
+                <div class="box">
+                    <img src="../images/Student3.jpg" alt="Student 3" onclick="toggleDetails('student3-details')" onkeydown="handleKeyPress (event,'student3-details')" tabindex="0" aria-expanded="false">
+                    <div id="student3-details" class="hidden-details">
+                    <h3>Manudi Moragoda</h3>
+                    <h4><b>Role:</b>&nbsp;Student 3</h4>
+                    <h4><b>Design & Implemented Pages:</b></h4>
+                    <p>Feedback Form</p>
+                    <p>Team page</p>
+                    <p>Content Page 3</p>
+                    </div>
+                </div>
+
+                <!--To display each team member in separete box-->
+                <div class="box">
+                    <img src="../images/Student4.jpg" alt="Student 4" onclick="toggleDetails('student4-details')" onkeydown="handleKeyPress (event,'student4-details')" tabindex="0" aria-expanded="false">
+                    <div id="student4-details" class="hidden-details">
+                    <h3>Amanda Rupasinghe</h3>
+                    <h4><b>Role:</b>&nbsp;Student 4</h4>
+                    <h4><b>Design & Implemented Pages:</b></h4>
+                    <p>User Profile</p>
+                    <p>Sitemap</p>
+                    <p>Content Page 4</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Footer with a link to student 3 editor-->
+        <footer>
+            <div class="person devider">
+                <a href="pageEditor_ST1.html" target="_blank">
+                    <h2>YEHENI</h2>
+                    <h2>DE SILVA</h2>
+                </a>
+            </div>
+            <div class="person devider">
+                <a href="pageEditor_ST2.html" target="_blank">
+                    <h2>KHADEEJA</h2>
+                    <h2>MOHAMMED</h2>
+                </a>
+            </div>
+            <div class="person devider">
+                <a href="pageEditor_ST3.html" target="_blank">
+                    <h2>MANUDI</h2>
+                    <h2>MORAGODA</h2>
+                </a>
+            </div>
+            <div class="person devider">
+                <a href="pageEditor_ST4.html" target="_blank">
+                    <h2>AMANDA</h2>
+                    <h2>RUPASINGHE</h2>
+                </a>
+            </div>
+            <br><br>
+            <div class="copyright">
+                <p>Copyright &copy; 2025</p>
+            </div>
+        </footer>
+        <script>
+            hb = document.querySelector('.hamburger');
+            xmark = document.querySelector('.xmark');
+            nav = document.querySelector('nav'); // Selecting nav correctly
+            hb.onclick = function(){
+                hb.style.display = 'none';
+                xmark.style.display = 'block';
+                nav.classList.toggle('navactive');
+            }
+            xmark.onclick = function(){
+                hb.style.display = 'block';
+                xmark.style.display = 'none';
+                nav.classList.remove('navactive');
+            }
+        </script>
+    </body>
+</html>

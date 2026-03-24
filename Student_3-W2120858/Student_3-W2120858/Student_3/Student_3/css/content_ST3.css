@@ -1,0 +1,140 @@
+/* Stles for page layout and design*/
+html {
+    scroll-padding-top: 100px;
+}
+/*Style for the container*/
+.container{
+    line-height: 1.6;
+    width: 100%;
+    margin:auto;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+}
+/*styles for the classes*/
+.intro,.Classification,.habitat,.EcologicalRole{
+    text-align: justify;
+    padding: 20px;
+}
+/*Styles for navigation bar*/
+#navlist{
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#navlist li{
+    display: inline;
+    padding-right: 20px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+#navlist li a{
+    text-decoration:none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+#navlist li a:hover{
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+/*List styling for the biological classification links*/
+#list{
+    padding-right: 20px;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+#navlist li{
+    font-size: 16px;
+    
+    font-weight: bold;
+}
+#list li a{
+    text-decoration:none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+#list li a:hover{
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+ul{
+    list-style-type: none;
+}
+/*Image styles*/
+.images img{
+    width: 45%;
+    height: auto;
+    display: block;
+    margin:10px auto;
+    border: 2px solid black;
+}
+.marine img{
+    width:1250px;
+    height: 650px;
+    margin:10px auto;
+    border: 2px solid black;
+    display: block;  
+}
+.sea img{
+    width:350px;
+    height:250px;
+    margin:10px auto;
+    border: 2px solid black;
+    display: block;  
+}
+/*Figure style*/
+.marine figure{
+    text-align: center;
+}
+.images figure{
+    text-align: center;
+}
+/*Table styling*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td{
+    border: 1px solid black;
+}
+th,td{
+    padding: 10px;
+    text-align: center;
+}
+/*Paragraph styling*/
+p {
+    margin-top: 0;
+    margin-bottom: 15px; 
+    line-height: 1.4;
+}
+/*section-padding styling*/
+.section-padding {
+    padding-top: 40px;
+    margin-top: 0px;
+}
+/*button styling*/
+.top {
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.top a{
+    padding: 10px 20px;
+    background-color: #7D9EC0;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.top a:hover{
+    background-color: blue;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+}
